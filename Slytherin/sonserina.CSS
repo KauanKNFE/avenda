@@ -1,0 +1,14 @@
+:root {
+  /* Definindo as variáveis de cor */
+  --cor-primaria: #0b1d09; /* Verde Floresta */
+  --cor-secundaria: #8aa06a; /* Oliva */
+  --cor-terciaria: #dbd8b6; /* Verde Escuro */
+  --cor-quaternaria: #245224; /* Marfim */
+  --cor-quintenaria: #90ae7c; /* Verde Musgo */
+}
+
+body{
+  background-image: url(../img/slyback.jpg);
+  background-position: 0px;
+  background-size: 100%;
+}

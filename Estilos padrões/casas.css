@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: "Harting";
+    src: url(../fontes/Harting_plain.ttf);
+  }
+  body{
+    background-size: cover;
+    background-repeat: none;
+  }
+  .apresentacao {
+    position: relative;
+    padding: 2vw;
+    text-align: left;
+    color: white;
+    backdrop-filter: blur(100px);
+    font-family: "Harting";
+    margin: 2vw auto;
+    max-width: 80%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 40px black;
+}
+.animal{
+    max-width: 25vw;
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--cor-secundaria);
+}
+
+h1{
+    text-align: center;
+}
+
+.loja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loja img{
+    border-radius: 10px;
+    animation: balanco 6s ease-in-out infinite alternate;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    max-width: 25vw;
+    max-height: 25vw;
+    object-fit: cover;
+    margin: 1vw;
+}
+
+
+.loja img:hover  {
+    filter: blur(3px) brightness(0.7);
+    transform: scale(1.1);
+    
+}
+
+.produto-container {
+    position: relative;
+    
+}
+
+.loja .produto-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.loja img:hover + .produto-info {
+    opacity: 1;
+}
+
+@keyframes balanco {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.btn-yellow {
+    background-color: var(--cor-secundaria); /* cor de fundo amarela */
+    font-family: Harry;
+    color: var(--cor-quaternaria); /* cor do texto */
+    text-shadow: 0px 0px 20px  var(--cor-quaternaria);
+    border: none; /* sem borda */
+    padding: 20px 40px; /* espaçamento interno (topo/baixo, esquerda/direita) */
+    font-size: 5vw; /* tamanho da fonte */
+    border-radius: 40px; /* bordas arredondadas */
+    position:relative; /* alinhamento vertical */
+    top: 6vw;
+    margin-bottom: 7vw;
+    left: 50%; /* alinhamento horizontal */
+    transform: translate(-50%, -50%); /* centralização */    transition: all 0.3s ease;
+    box-shadow: 0 0 20px var(--cor-quaternaria);
+  }
+  .btn-yellow:hover{
+    background-color: #040303ad;
+    color: #e7d8c6;
+  }
+
+  p{
+    text-shadow: 0 0 20px black;
+  }

@@ -1,0 +1,14 @@
+:root {
+    /* Definindo as variáveis de cor */
+    --cor-primaria: #120a02; /* Mogno */
+    --cor-secundaria: #d19e45; /* Cáqui */
+    --cor-terciaria: #eac977; /* Amarelo esverdeado */
+    --cor-quaternaria: #43331f; /* Café */
+    --cor-quintenaria: #fbf8eb; /* Branco floral */
+  }
+
+  body{
+    background-image: url(../img/lufback.jpg);
+    background-position: 0px;
+    background-size: 100%;
+  }

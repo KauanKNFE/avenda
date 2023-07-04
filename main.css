@@ -1,0 +1,93 @@
+:root {
+    /* Definindo as variáveis de cor */
+    --cor-primaria: #040303; /* Preto de feijão */
+    --cor-secundaria: #ffffff; /* Branco */
+    --cor-terciaria: #5c6a7b; /* Azul cadete */
+    --cor-quaternaria: #add3ff; /* Gelo */
+  }
+
+  @font-face {
+    font-family: "Harting";
+    src: url(fontes/Harting_plain.ttf);
+  }
+
+  body{
+    background-image: url(img/mainback.jpg);
+  }
+
+  .conteudo{
+    background-color: #04030336;
+  }
+
+  .title{
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
+    color: #fff9f9;
+  }
+
+  @keyframes swing {
+    0% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+    100% { transform: rotate(-1deg); }
+  }
+  
+  .floating-card {
+    position: relative;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 80%;
+    padding: 20px;
+    background-color: #353231ad;
+    color: white;
+    box-shadow: 0 2px 30px rgba(214, 234, 241, 0.792);
+    animation: swing 10s infinite;
+    font-family: "Harting";
+    font-size: 2vw;
+    backdrop-filter: blur(0.5vw);
+  }
+
+  .btn-yellow {
+    background-color: #d1c3b6b6; /* cor de fundo amarela */
+    font-family: Harry;
+    color: #635d55; /* cor do texto */
+    text-shadow: 0px 0px 20px  #9cabe9;
+    border: none; /* sem borda */
+    padding: 20px 40px; /* espaçamento interno (topo/baixo, esquerda/direita) */
+    font-size: 5vw; /* tamanho da fonte */
+    border-radius: 40px; /* bordas arredondadas */
+    position:relative; /* alinhamento vertical */
+    top: 6vw;
+    margin-bottom: 6vw;
+    left: 50%; /* alinhamento horizontal */
+    transform: translate(-50%, -50%); /* centralização */
+    transition: all 0.3s ease;
+  }
+  .btn-yellow:hover{
+    background-color: #040303ad;
+    animation: pulse 6s infinite; /* animação de pulsação */
+    color: #e7d8c6;
+  }
+  
+  /* animação de pulsação */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 8vw blue;
+    }
+    25% {
+      box-shadow: 0px 0px 8vw yellow;
+    }
+    50% {
+      box-shadow: 0px 0px 8vw green;
+    }
+    75%{
+      box-shadow: 0px 0px 8vw red;
+    }
+    100%{
+      box-shadow: 0px 0px 8vw blue;
+    }
+  }
+  

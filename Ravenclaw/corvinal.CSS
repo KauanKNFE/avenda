@@ -1,0 +1,14 @@
+:root {
+    /* Definindo as variáveis de cor */
+    --cor-primaria: #060c1b; /* Azul Meia-Noite */
+    --cor-secundaria: #487c9f; /* Azul aço */
+    --cor-terciaria: #d6e3d8; /* Branco cinza-palha */
+    --cor-quaternaria: #1b4683; /* Azul Royal */
+    --cor-quintenaria: #998052; /* Marrom tostado */
+  }
+
+  body{
+    background-image: url(../img/ravback.jpg);
+    background-position: 0px;
+    background-size: 100%;
+  }

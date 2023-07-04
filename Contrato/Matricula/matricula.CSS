@@ -1,0 +1,98 @@
+:root {
+  /* Definindo as variáveis de cor */
+  --cor-primaria: #040303; /* Preto de feijão */
+  --cor-secundaria: #ffffff; /* Branco */
+  --cor-terciaria: #5c6a7b; /* Azul cadete */
+  --cor-quaternaria: #add3ff; /* Gelo */
+}
+
+header {
+  padding-bottom: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  size: 100%;
+}
+
+.titulo {
+  text-align: center;
+  color: #ffc500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 5vw;
+  font-family: "Harry";
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background-color: #333;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  color: #ffc500;
+  font-weight: bold;
+}
+
+.form-container p {
+  font-style: italic;
+  color: #999;
+}
+
+.form-container fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.form-container legend {
+  color: #ffc500;
+  font-weight: bold;
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+}
+
+.form-container input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffc500;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 197, 0, 0.5);
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #ffdf80;
+  box-shadow: 0 0 20px rgba(255, 197, 0, 0.8);
+}
+
+.conteudo {
+  background-color: #0000003d;
+  backdrop-filter: blur(100px);
+  margin: 5vw auto;
+  padding: 20px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}

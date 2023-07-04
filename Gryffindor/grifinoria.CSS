@@ -1,0 +1,14 @@
+:root {
+    /* Definindo as variáveis de cor */
+    --cor-primaria: #0f0101; /* Quase preto */
+    --cor-secundaria: #d54728; /* Vinho */
+    --cor-terciaria: #603c2c; /*Marrom*/
+    --cor-quaternaria: #581f00; /* Clarinho */
+    --intermediaria: #bd9574; /* Bege */
+}
+
+body{
+  background-image: url(../img//griback.jpg);
+  background-position: 0px;
+  background-size: 100%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts - Página Inicial</title>
+    <link rel="stylesheet" href="../../Estilos padrões/main-header.CSS">
+    <link rel="stylesheet" href="../../Estilos padrões/footer.CSS">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="matricula.CSS">
+    <link rel="icon" href="img/favcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favcon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><h1 class="titulo">Voltar</h1></a>
+    </header>
+    <main class="conteudo">
+        <h1 class="titulo">Formulário de Matrícula <br> em Hogwarts</h1>
+  
+        <div class="form-container">
+            <form>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                    
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Escolha da Casa</legend>
+                    <p>Selecione a casa que você deseja ingressar:</p>
+                    <label for="gryffindor">
+                        <input type="radio" id="gryffindor" name="casa" value="gryffindor" required>
+                        Grifinória
+                    </label>
+                    <label for="ravenclaw">
+                        <input type="radio" id="ravenclaw" name="casa" value="ravenclaw" required>
+                        Corvinal
+                    </label>
+                    <label for="hufflepuff">
+                        <input type="radio" id="hufflepuff" name="casa" value="hufflepuff" required>
+                        Lufa-Lufa
+                    </label>
+                    <label for="slytherin">
+                        <input type="radio" id="slytherin" name="casa" value="slytherin" required>
+                        Sonserina
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Necessidades Especiais</legend>
+                    <p>Informe suas necessidades especiais ou informações importantes para iniciar os estudos em Hogwarts:</p>
+                    <label for="materiais">Materiais:</label>
+                    <textarea id="materiais" name="materiais" rows="4" required></textarea>
+                </fieldset>
+                
+                <br>
+                <input type="submit" value="Enviar Matrícula" class="botao-matricula">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            Entre em Contato<br>
+            Para qualquer pergunta, sussurro ou pacto oculto, não hesite em nos contatar:<br><br>
+            contato@escolahogwarts.com<br>
+            Siga-nos nas Trevas<br><br>
+            &copy; 2023 Escola Hogwarts. Todos os direitos amaldiçoados.
+        </div>
+    </footer>
+</body>
+</html>
